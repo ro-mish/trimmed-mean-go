@@ -1,5 +1,3 @@
-// trimmedmean provides functionality to calculate trimmed means, both asymetric and symmetric.
-
 package trimmedmean
 
 import (
@@ -11,7 +9,6 @@ import (
 func TrimmedMean(data []float64, trim float64) (float64, error) {
 	return TrimmedMeanAsym(data, trim, trim)
 }
-
 
 // Each trim proportion must be between 0 and 0.5, and their sum must not exceed 1.
 func TrimmedMeanAsym(data []float64, trimLow, trimHigh float64) (float64, error) {
